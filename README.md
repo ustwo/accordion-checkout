@@ -8,7 +8,7 @@ The prototype is very basic in functionality and not packaged for release, it's 
 
 Demo:
 
-polka.ustwo.us/anw/accordion-checkout-jquery.v1.9/src/initializr
+	[polka.ustwo.us/anw/accordion-checkout-jquery.v1.9/src/initializr](polka.ustwo.us/anw/accordion-checkout-jquery.v1.9/src/initializr)
 
 To test the accordiong open:
 
