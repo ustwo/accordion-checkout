@@ -6,6 +6,10 @@ The prototype is very basic in functionality and not packaged for release, it's 
 
 ## Documentation
 
+Demo:
+
+polka.ustwo.us/anw/accordion-checkout-jquery.v1.9/src/initializr
+
 To test the accordiong open:
 
 		src/initializr/index.html
