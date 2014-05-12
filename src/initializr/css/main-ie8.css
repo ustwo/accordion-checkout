@@ -1,0 +1,159 @@
+input[type="checkbox"] + label.checkbox-style {
+    background: url("../images/checkbox.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked + label.checkbox-style {
+    background-image: url("../images/checkbox_selected.png");
+}
+
+body > .container > .header {
+    background-color: white;
+    background-image: url("../images/logo_johnlewis.png"), linear-gradient(180deg, #ffffff, #777777);
+    background-position: 50px 15px, 0 35px;
+    background-size: 100px 24px, 100% 100%;
+    background-repeat: no-repeat;
+}
+
+body > .container > .header .back {
+    background-image: url("../images/arrow_back_dark.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+body > .container .logo {
+    background-image: url("../images/logo_networkwallet.png");
+    background-size: 167px 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body.home .carousel-wrap div.slide-1 {
+    background-image: url(../images/carousel_01.png);
+}
+
+body.home .carousel-wrap div.slide-1 div > h3:before {
+    background-image: url("../images/icn_carousel_01.png");
+}
+
+body.home .carousel-wrap div.slide-2 {
+    background-image: url(../images/carousel_02.png);
+}
+
+body.home .carousel-wrap div.slide-2 div > h3:before {
+    background-image: url("../images/icn_carousel_02.png");
+}
+
+body.home .carousel-wrap div.slide-3 {
+    background-image: url(../images/carousel_03.png);
+}
+
+body.home .carousel-wrap div.slide-3 div > h3:before {
+    background-image: url("../images/icn_carousel_03.png");
+}
+
+body.home .carousel-wrap div.slide-4 {
+    background-image: url(../images/carousel_04.png);
+}
+
+body.home .carousel-wrap div.slide-4 div > h3:before {
+    background-image: url("../images/icn_carousel_04.png");
+}
+
+
+.security-info-modal .modal-container .card-amex {
+    background-image: url("../images/card_amex.png");
+}
+
+.security-info-modal .modal-container .card-other {
+    background-image: url("../images/card_other.png");
+}
+
+
+.security-info-modal .modal-container .close {
+    background-size: 15px 15px;
+    background-image: url("../images/close.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.page-register fieldset.credit-card-container span {
+    background-image: url("../images/logo_bluebox.png");
+    background-size: 29px 29px;
+    background-repeat: no-repeat;
+}
+
+.page-register .step .security-code-container > .security-code-info, .page-register .step .postcode > .security-code-info {
+    background-image: url("../images/icn_question.png");
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+}
+.page-register .step.new-account .step-header:before {
+    background-image: url("../images/icn_account_inactive.png");
+}
+
+.page-register .step.link-to-card .step-header:before {
+    background-image: url("../images/icn_card_inactive.png");
+}
+
+.page-register .step.add-billing-details .step-header:before {
+    background-image: url("../images/icn_billing_inactive.png");
+}
+
+.page-register .step.add-shipping-details .step-header:before {
+    background-image: url("../images/icn_shipping_inactive.png");
+}
+
+.page-register .step.active.new-account .step-header:before {
+    background-image: url("../images/icn_account_active.png");
+    background-size: cover;
+}
+
+.page-register .step.active.link-to-card .step-header:before {
+    background-image: url("../images/icn_card_active.png");
+}
+
+.page-register .step.active.add-billing-details .step-header:before {
+    background-image: url("../images/icn_billing_active.png");
+}
+
+.page-register .step.active.add-shipping-details .step-header:before {
+    background-image: url("../images/icn_shipping_active.png");
+}
+
+body.safekey > .container > .logo {
+    background-image: url("../images/logo_networkwallet_confirmation.png");
+}
+
+.page-safekey .safekey-logo {
+    background-image: url("../images/amex-safekey-logo.png");
+    background-size: 100px 32px;
+}
+
+body.completed > .container > .logo {
+    background-image: url("../images/logo_networkwallet_confirmation.png");
+}
+
+.page-completed div.payment-type > .header h2:before {
+    background-image: url("../images/icn_card_inactive.png");
+}
+
+.page-completed div.payment-type > div span:before {
+    background-repeat: no-repeat;
+    background-size: 23px 23px, 23px 23px;
+    background-position: 0 0, 35px 0;
+    background-image: url("../images/checkbox_selected.png"), url("../images/logo_bluebox.png");
+}
+
+.page-completed div.shipping-to > .header h2:before {
+    background-image: url("../images/icn_shipping_inactive.png");
+}
+
+.page-completed div.shipping-to > div.address > p:before {
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+    background-position: 0 0;
+    background-image: url("../images/checkbox_selected.png");
+}

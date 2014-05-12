@@ -1,0 +1,343 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Accordion - jquery 1.9</title>
+
+    <link rel="stylesheet" href="css/accordion.css?v=1.0">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body class="triggered register">
+qwe
+
+    <a href="#" class="trigger"></a>
+    <div class="overlay" style=""></div>
+
+    <div class="container">
+        <script>
+        </script>
+
+        <div class="header register">
+            <a href="" class="back"></a>
+            <span class="total">£130.00</span>
+        </div>
+
+        <div class="logo"></div>
+
+        <div class="wrapper">
+
+            <div class="content page-register">
+                <div class="step new-account filled active">
+                    <div class="step-header">
+                        <div class="empty">
+                            <h2>Create new wallet</h2>
+                        </div>
+                        <div class="filled">
+                            <h2>r****@gmail.com</h2>
+                        </div>
+                    </div>
+
+                    <div class="form register">
+                        <p>Please enter email address and create a password. This will be how you log in to your Network Wallet.</p>
+                        <form action="" data-parsley-ui-enabled="false">
+                            <fieldset>
+                                <label for="email">Enter email address</label>
+                                <input type="email" class="email parsley-validated" id="email" required="">
+                            </fieldset>
+                            <fieldset>
+                                <label for="confirm-email">Confirm email address</label>
+                                <input type="email" class="confirm-email parsley-validated" id="confirm-email" required="">
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="create-password">Create password</label>
+                                <p class="password-info">
+                                    Your password: <span class="validation different-from-email ok">must be different than your email address</span>, <span class="validation characters-length ko">must contain 8 to 20 characters</span>, <span class="validation letter-number ok">including one letter and number</span>, and <span class="validation no-spaces ok">not contain any spaces</span>.
+                                </p>
+                                <input type="password" class="create-password parsley-validated" id="create-password" required="">
+                            </fieldset>
+                            <fieldset>
+                                <label for="confirm-password">Confirm password</label>
+                                <input type="password" class="confirm-password parsley-validated" id="confirm-password" required="">
+                            </fieldset>
+
+                            <div class="privacy-container">
+                                <input type="checkbox" name="privacy" value="privacy" id="privacy" required="" class="parsley-validated">
+                                <label for="privacy" class="checkbox-style"></label>
+                                <label for="privacy">Check here to confirm your review and acceptiance of our <a>Terms of Use</a>
+                                </label>
+                            </div>
+
+                            <div class="agreement-container">
+                                <input type="checkbox" name="agreement" value="agreement" id="agreement" required="" class="parsley-validated">
+                                <label for="agreement" class="checkbox-style"></label>
+                                <label for="agreement">You signify you gave reviewed and agreed to the <a>American Express User Agreement</a>
+                                </label>
+                            </div>
+
+                            <div class="button-container">
+                                <div class="button confirm"><span class="long-label">Next</span><span class="short-label">Next</span>
+                                </div>
+                                <div class="button go-back secondary"><span class="long-label">Back</span><span class="short-label">Back</span>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="step link-to-card filled">
+                    <div class="step-header">
+                        <div class="empty">
+                            <h2>Add card to wallet</h2>
+                        </div>
+                        <div class="filled">
+                            <h2>**** 3456</h2><span class="cc-icon"></span>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <form>
+                            <fieldset>
+                                <label for="card-name">Name on card</label>
+                                <input type="text" class="card-name parsley-validated" id="card-name" placeholder="First Last" required="">
+                            </fieldset>
+                            <fieldset class="credit-card-container">
+                                <label for="card-number">Card number</label>
+                                <input type="text" class="card-number parsley-validated" id="card-number" placeholder="Enter digits" pattern="[0-9]*" maxlength="16" required="">
+                                <span class="cc-icon"></span>
+                            </fieldset>
+                            <div class="expiry-security-container">
+                                <div class="expiry-date-container">
+                                    <label for="expiry-date">Expiry date</label>
+                                    <input type="text" class="expiry-date parsley-validated" id="expiry-date" placeholder="MM / DD" pattern="[0-9]*" required="">
+                                </div>
+                                <div class="security-code-container">
+                                    <label for="security-code">Security code</label>
+                                    <a href="" tabindex="-1" class="security-code-info">
+                                        <img src="images/tooltip_cards.png">
+                                    </a>
+
+                                    <input type="text" class="security-code parsley-validated" id="security-code" placeholder="3 or 4 digits" pattern="[0-9]*" maxlength="4" required="">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <div class="button confirm"><span class="long-label">Next</span><span class="short-label">Next</span>
+                                </div>
+                                <div class="button go-back secondary"><span class="long-label">Back</span><span class="short-label">Back</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="step add-billing-details">
+                    <div class="step-header">
+                        <div class="empty">
+                            <h2>Add billing details</h2>
+                        </div>
+                        <div class="filled">
+                            <h2>445 Mount Edan Road, Mount Eden, Auckland</h2>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <p>
+                            This billing address must be the same as the one on file with the bank that issued your card.
+                        </p>
+                        <form>
+                            <fieldset>
+                                <label for="country">Country</label>
+                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                <input type="text" class="country ui-autocomplete-input parsley-validated" id="country" required="" autocomplete="off">
+                            </fieldset>
+
+                            <div class="address-container">
+                                <fieldset>
+                                    <label for="address-1">Address line 1</label>
+                                    <input type="text" class="address-1 parsley-validated" id="address-1" required="">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="address-2">Address line 2 (optional)</label>
+                                    <input type="text" class="address-2" id="address-2">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="city">City</label>
+                                    <input type="text" class="city parsley-validated" id="city" required="">
+                                </fieldset>
+
+                                <div class="state-postcode-container">
+                                    <div class="state-container">
+                                        <label for="state">State / Region</label>
+                                        <input type="text" class="state parsley-validated" id="state" required="">
+                                    </div>
+                                    <div class="postcode-container">
+                                        <label for="postcode">Postcode</label>
+                                        <input type="text" class="postcode parsley-validated" id="postcode" required="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="address-uk-container">
+                                <fieldset>
+                                    <label for="postcode-uk">Post code</label>
+                                    <input type="text" class="postcode-uk" id="postcode-uk">
+                                </fieldset>
+                                <div class="button postcode-search">Look up</div>
+                            </div>
+
+                            <div class="button-container">
+                                <div class="button confirm disabled"><span class="long-label">Next</span><span class="short-label">Next</span>
+                                </div>
+                                <div class="button go-back secondary"><span class="long-label">Back</span><span class="short-label">Back</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="step add-shipping-details">
+                    <div class="step-header">
+                        <div class="empty">
+                            <h2>Add shipping details</h2>
+                        </div>
+                        <div class="filled">
+                            <h2>445 Mount Edan Road, Mount Eden, Auckland</h2>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <form>
+                            <div class="use-billing-container">
+                                <input type="checkbox" name="use-billing-address" value="use-billing-address" id="use-billing-address">
+                                <label for="use-billing-address" class="checkbox-style"></label>
+                                <label for="use-billing-address">Use my billing address</label>
+                            </div>
+
+                            <fieldset>
+                                <label for="country">Country</label>
+                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                <input type="text" class="country ui-autocomplete-input parsley-validated" id="country" required="" autocomplete="off">
+                            </fieldset>
+
+                            <div class="address-container">
+                                <fieldset>
+                                    <label for="address-1">Address line 1</label>
+                                    <input type="text" class="address-1 parsley-validated" id="address-1" required="">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="address-2">Address line 2 (optional)</label>
+                                    <input type="text" class="address-2" id="address-2">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="city">City</label>
+                                    <input type="text" class="city parsley-validated" id="city" required="">
+                                </fieldset>
+
+                                <div class="state-postcode-container">
+                                    <div class="state-container">
+                                        <label for="state">State / Region</label>
+                                        <input type="text" class="state parsley-validated" id="state" required="">
+                                    </div>
+                                    <div class="postcode-container">
+                                        <label for="postcode">Postcode</label>
+                                        <input type="text" class="postcode parsley-validated" id="postcode" required="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="address-uk-container">
+                                <fieldset>
+                                    <label for="postcode-uk">Post code</label>
+                                    <input type="text" class="postcode-uk" id="postcode-uk">
+                                </fieldset>
+                                <div class="button postcode-search">Look up</div>
+                            </div>
+                            <div class="button-container">
+                                <div class="button confirm disabled"><span class="long-label">Confirm</span><span class="short-label">Confirm</span>
+                                </div>
+                                <div class="button go-back secondary"><span class="long-label">Back</span><span class="short-label">Back</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="step hi-micke">
+                    <div class="step-header">
+                        <div class="empty">
+                            <h2>Hi Micke !</h2>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <form>
+
+                            <fieldset>
+                                <label for="country">blah blah</label>
+                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                <input type="text" class="country ui-autocomplete-input parsley-validated" id="country" required="" autocomplete="off">
+                            </fieldset>
+                            <fieldset>
+                                <label for="country">blah blah</label>
+                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                <input type="text" class="country ui-autocomplete-input parsley-validated" id="country" required="" autocomplete="off">
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="country">blah blah</label>
+                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                <input type="text" class="country ui-autocomplete-input parsley-validated" id="country" required="" autocomplete="off">
+                            </fieldset>
+
+                            <div class="button-container">
+                                <div class="button confirm disabled"><span class="long-label">Confirm</span><span class="short-label">Confirm</span>
+                                </div>
+                                <div class="button go-back secondary"><span class="long-label">Back</span><span class="short-label">Back</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a href="" class="terms-of-service">Terms of Service</a>
+                <a href="" class="privacy-statement">Privacy Statement</a>
+                <a href="" class="faq">FAQ</a>
+                <p>All users of our services to Privacy Statement and agree to bound by Terms of Service.
+                    <br>Please review.
+                    <br>© 2014 American Express Company.
+                    <br>All rights reserved.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="security-info-modal">
+        <div class="modal-container">
+            <a href="" class="close"></a>
+            <div class="card-amex">American Express</div>
+            <div class="card-other">Visa/Mastercard/Discover</div>
+        </div>
+    </div>
+
+    <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul>
+    <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-2" tabindex="0" style="display: none;"></ul>
+
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="jquery-boilerplate/dist/jquery.boilerplate.js"></script>
+    <script>
+
+    $(document).ready(function(){
+        $("body").defaultPluginName({
+            propertyName: "a custom value"
+        });
+    });
+       
+    </script>
+    <script src="js/accordion.js"></script>
+</body>
+
+</html>

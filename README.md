@@ -1,4 +1,4 @@
-accordion-checkout
-==================
+### Accordion Checkout built for jQuery 1.9 
 
-An accordion checkout prototype that works down to ie8.  Originally used for an Amex project, may be reused.
+Compatible all the way down to ie8
+

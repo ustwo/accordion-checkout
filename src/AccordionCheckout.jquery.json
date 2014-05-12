@@ -1,0 +1,32 @@
+{
+  "name": "accordioncheckout",
+  "title": "jQuery Accordion Checkout",
+  "description": "",
+  "keywords": [
+    "jquery",
+  ],
+  "version": "0.0.2",
+  "author": {
+    "name": "Jonathan Matthey",
+    "url": "https://github.com/manymengofishing"
+  },
+  "maintainers": [
+    {
+      "name": "Jonathan Matthey",
+      "url": "https://github.com/manymengofishing"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "bugs": "https://github.com/jquery-boilerplate/boilerplate/issues",
+  "homepage": "http://jqueryboilerplate.com",
+  "docs": "https://github.com/jquery-boilerplate/boilerplate#readme",
+  "download": "https://github.com/jquery-boilerplate/boilerplate/archive/master.zip",
+  "dependencies": {
+    "jquery": ">=1.9"
+  }
+}
